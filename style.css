@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@400;700;900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: relative;
+    top: -50px;
+    padding: 10px 30px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    background-color: #0174BE;
+    color: white;
+}
+
+
+body {
+    display: grid;
+    place-content: center;
+}
+
+#tempConverter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0C356A;
+    padding: 20px;
+    margin: 25% auto;
+}
+
+.main {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    background-color: #FFC436;
+    font-size: 1.5rem;
+}
+
+label[for="fahrenheit"] {
+    font-weight: normal;
+    color: red;
+}
+
+label[for="celsius"] {
+    font-weight: normal;
+    color: green;
+}
+
+#fahrenheit,
+#celsius {
+    text-align: center;
+    background-color: #FFF0CE;
+    width: 100px;
+    height: 30px;
+    /* border-radius: 10px; */
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(0, 42, 255, 0.726);
+    font-size: 0.75rem;
+}
+
+#convertToCelsius,
+#convertToFahrenheit {
+    padding: 0.5em;
+    background-color: #0174BE;
+    color: #FFF0CE;
+    border: none;
+    /* height: 2rem; */
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #22668D;
+}
+
+#convertToCelsius:active,
+#convertToFahrenheit:active {
+    /* box-shadow: 2px 2px 5px #22668D; */
+    color: red;
+}
